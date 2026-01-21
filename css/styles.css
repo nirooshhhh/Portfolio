@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f0f1a;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff4d4d;
+}
+
+.logo {
+  color: #ff4d4d;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-text span {
+  color: #ff4d4d;
+}
+
+.hero-text h3 {
+  margin: 10px 0;
+  color: #aaa;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.hero-img img {
+  width: 280px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 77, 77, 0.5);
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 60px 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #1b1b2b;
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 77, 77, 0.3);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #ff4d4d;
+  text-decoration: none;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #777;
+}
