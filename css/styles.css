@@ -35,19 +35,35 @@ body {
 
 .logo {
   color: #ff4d4d;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-/* HERO */
+/* ================= HERO SECTION ================= */
 .hero {
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 80px 50px;
-  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 0 50px;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1000px; /* Reduced max-width to keep content tighter */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Changed from space-between to center */
+  gap: 50px; /* This controls the specific gap you marked in red */
+}
+
+.hero-text {
+  max-width: 500px;
 }
 
 .hero-text h1 {
   font-size: 48px;
+  line-height: 1.2;
 }
 
 .hero-text span {
@@ -60,39 +76,66 @@ body {
 }
 
 .hero-text p {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #ccc;
 }
 
 .btn {
-  padding: 12px 24px;
+  padding: 12px 28px;
   background: #ff4d4d;
   color: white;
   text-decoration: none;
   border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
 }
 
-.hero-img img {
-  width: 280px;
-  border-radius: 50%;
-  box-shadow: 0 0 40px rgba(255, 77, 77, 0.5);
+.btn:hover {
+  background: #e63e3e;
+  box-shadow: 0 0 20px rgba(255, 77, 77, 0.4);
 }
+
+/* HERO IMAGE */
+.hero-img img {
+  width: 320px; /* Adjusted size */
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 77, 77, 0.2);
+  box-shadow: 0 0 50px rgba(255, 77, 77, 0.3);
+}
+
+/* MOBILE HERO */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+  }
+}
+/* ================= HERO END ================= */
 
 /* ABOUT */
 .about {
-  padding: 60px 50px;
+  padding: 80px 50px;
   text-align: center;
 }
 
 /* PROJECTS */
 .projects {
-  padding: 60px 50px;
+  padding: 80px 50px;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .project-card {
@@ -100,6 +143,7 @@ body {
   padding: 20px;
   border-radius: 16px;
   transition: 0.3s;
+  border: 1px solid #2a2a3a;
 }
 
 .project-card img {
@@ -109,26 +153,29 @@ body {
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(255, 77, 77, 0.3);
+  box-shadow: 0 20px 40px rgba(255, 77, 77, 0.2);
+  border-color: #ff4d4d;
 }
 
 .project-card a {
   display: inline-block;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
   color: #ff4d4d;
   text-decoration: none;
+  font-weight: 500;
 }
 
 /* CONTACT */
 .contact {
-  padding: 60px 50px;
+  padding: 80px 50px;
   text-align: center;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
-  background: #111;
+  padding: 30px;
+  background: #0a0a12;
   color: #777;
+  border-top: 1px solid #1b1b2b;
 }
