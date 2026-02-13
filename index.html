@@ -9,94 +9,118 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <h2 class="logo">Nirosh.dev</h2>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="navbar">
+  <h2 class="logo">Nirosh.dev</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
+<!-- HERO -->
+<section id="home" class="hero">
   <div class="hero-container">
 
     <div class="hero-text">
       <h1>Hi, I'm <span>Nirosh</span></h1>
-      <h3>Frontend Developer</h3>
-      <p>I build modern, responsive web applications.</p>
-      <a href="#projects" class="btn">View Projects</a>
+      <h3 class="typing"></h3>
+      <p>I build modern, responsive and user-focused web applications.</p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="assets/resume.pdf" class="btn-outline" download>Download Resume</a>
+      </div>
     </div>
 
     <div class="hero-img">
-      <img src="assets/profile.jpeg" alt="My Photo">
+      <img src="assets/profile.jpeg" alt="Nirosh Photo">
     </div>
 
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about" class="about section">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    I'm a passionate frontend developer focused on building clean UI,
+    smooth interactions and scalable web applications using modern technologies.
+  </p>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate frontend developer skilled in HTML, CSS, JavaScript, React,
-      and API integrations. I love building clean UI and smooth user experiences.
-    </p>
-  </section>
+<!-- SKILLS -->
+<section id="skills" class="skills section">
+  <h2 class="section-title">Skills</h2>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
+  <div class="skills-grid">
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">React</div>
+    <div class="skill-card">Git</div>
+    <div class="skill-card">Node.js</div>
+  </div>
+</section>
 
-    <div class="project-grid">
+<!-- PROJECTS -->
+<section id="projects" class="projects section">
+  <h2 class="section-title">Projects</h2>
 
-      <!-- PROJECT 1 -->
-      <div class="project-card">
-        <img src="assets/projects/movieverse.png" alt="MovieVerse">
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="assets/projects/movieverse.png" alt="MovieVerse">
+      <div class="project-content">
         <h3>MovieVerse</h3>
-        <p>Movie app using TMDB API with trailers and search.</p>
-        <a href="https://movie-app-six-pi-15.vercel.app" target="_blank">Live Demo</a><a>|</a>
-        <a href="https://github.com/nirooshhhh/Movie-app" target="_blank">GitHub</a>
+        <p>Movie app using TMDB API with search and trailers.</p>
+        <div class="project-links">
+          <a href="https://movie-app-six-pi-15.vercel.app" target="_blank">Live</a>
+          <a href="https://github.com/nirooshhhh/Movie-app" target="_blank">Code</a>
+        </div>
       </div>
-
-      <!-- PROJECT 2 -->
-      <div class="project-card">
-        <img src="assets/projects/stackvisualizer (1).png" alt="Portfolio">
-        <h3>Stack Visualizer (Conversion & Evaluation)</h3>
-        <p>An interactive tool that visualizes stack operations and expression conversion/evaluation.</p>
-        <a href="https://stack-conversion-and-evaluation-ktm.vercel.app" target="_blank">Live Demo</a><a>|</a>
-        <a href="https://github.com/nirooshhhh/Stack-Conversion-and-Evaluation" target="_blank">GitHub</a>
-      </div>
-
-      <!-- PROJECT 3 -->
-      <div class="project-card">
-        <img src="assets/projects/aicrop.png" alt="Todo App">
-        <h3>AI Crop Recommendation System</h3>
-        <p>A machine‑learning based system that suggests the best crops using soil and weather data.</p>
-        <a href="#" target="_blank">Live Demo</a><a>|</a>
-        <a href="#" target="_blank">GitHub</a>
-        <p><a>In Progress...</a></p>
-      </div>
-
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <strong>niroshrai2006@gmail.com</strong></p>
-    <p>GitHub: <a href="https://github.com/nirooshhhh" target="_blank">github.com/nirooshhhh</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/nirosh-rai-b12513378/" target="_blank">linkedin.com/in/nirosh-rai-b</a></p>
-  </section>
+    <div class="project-card">
+      <img src="assets/projects/stackvisualizer (1).png" alt="Stack Visualizer">
+      <div class="project-content">
+        <h3>Stack Visualizer</h3>
+        <p>Visualizes stack operations and expression evaluation.</p>
+        <div class="project-links">
+          <a href="https://stack-conversion-and-evaluation-ktm.vercel.app" target="_blank">Live</a>
+          <a href="https://github.com/nirooshhhh/Stack-Conversion-and-Evaluation" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
 
-  <footer>
-    <p>© 2026 Nirosh. All rights reserved.</p>
-  </footer>
+    <div class="project-card">
+      <img src="assets/projects/aicrop.png" alt="AI Crop">
+      <div class="project-content">
+        <h3>AI Crop Recommendation</h3>
+        <p>ML system suggesting crops using soil & weather data.</p>
+        <div class="project-links">
+          <span class="coming">In Progress</span>
+        </div>
+      </div>
+    </div>
 
-  <script src="script.js"></script>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact section">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: niroshrai2006@gmail.com</p>
+  <p>GitHub: github.com/nirooshhhh</p>
+  <p>LinkedIn: linkedin.com/in/nirosh-rai-b</p>
+</section>
+
+<footer>
+  <p>© 2026 Nirosh Rai | Built with HTML, CSS & JS</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
