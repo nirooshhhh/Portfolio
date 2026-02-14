@@ -3,124 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nirosh | Portfolio</title>
+  <title>Nirosh Rai | Full Stack Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
 
-<header class="navbar">
-  <h2 class="logo">Nirosh.dev</h2>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h2 class="logo">Nirosh.dev</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-container">
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-container">
 
-    <div class="hero-text">
-      <h1>Hi, I'm <span>Nirosh</span></h1>
-      <h3 class="typing"></h3>
-      <p>I build modern, responsive and user-focused web applications.</p>
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Nirosh Rai</span></h1>
+        <h3>Full Stack Developer | 2nd Year Engineering Student</h3>
+        <p>
+          I am a passionate Computer Engineering student currently in my 2nd year.
+          I enjoy building responsive web applications and learning modern
+          full stack technologies.
+        </p>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="assets/resume.pdf" class="btn-outline" download>Download Resume</a>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="assets/profile.jpeg" alt="Nirosh Profile">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <h2>About Me</h2>
+    <p>
+      I am a second-year engineering student with strong interest in web development.
+      I have experience building projects using HTML, CSS, JavaScript, and backend
+      technologies like Node.js and Express. I am constantly learning and improving
+      my skills by building real-world projects.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript, React</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <p>Node.js, Express.js</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Database</h3>
+        <p>MongoDB, MySQL</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <p>Git, GitHub, Vercel, Postman</p>
       </div>
     </div>
+  </section>
 
-    <div class="hero-img">
-      <img src="assets/profile.jpeg" alt="Nirosh Photo">
-    </div>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <h2>My Projects</h2>
 
-  </div>
-</section>
+    <div class="project-grid">
 
-<!-- ABOUT -->
-<section id="about" class="about section">
-  <h2 class="section-title">About Me</h2>
-  <p>
-    I'm a passionate frontend developer focused on building clean UI,
-    smooth interactions and scalable web applications using modern technologies.
-  </p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="skills section">
-  <h2 class="section-title">Skills</h2>
-
-  <div class="skills-grid">
-    <div class="skill-card">HTML</div>
-    <div class="skill-card">CSS</div>
-    <div class="skill-card">JavaScript</div>
-    <div class="skill-card">React</div>
-    <div class="skill-card">Git</div>
-    <div class="skill-card">Node.js</div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="projects section">
-  <h2 class="section-title">Projects</h2>
-
-  <div class="project-grid">
-
-    <div class="project-card">
-      <img src="assets/projects/movieverse.png" alt="MovieVerse">
-      <div class="project-content">
+      <div class="project-card">
+        <img src="assets/projects/movieverse.png" alt="MovieVerse">
         <h3>MovieVerse</h3>
-        <p>Movie app using TMDB API with search and trailers.</p>
-        <div class="project-links">
-          <a href="https://movie-app-six-pi-15.vercel.app" target="_blank">Live</a>
-          <a href="https://github.com/nirooshhhh/Movie-app" target="_blank">Code</a>
-        </div>
+        <p>Movie search application using TMDB API with trailer support.</p>
+        <a href="https://movie-app-six-pi-15.vercel.app" target="_blank">Live Demo</a>
+        <a href="https://github.com/nirooshhhh/Movie-app" target="_blank">GitHub</a>
       </div>
-    </div>
 
-    <div class="project-card">
-      <img src="assets/projects/stackvisualizer (1).png" alt="Stack Visualizer">
-      <div class="project-content">
+      <div class="project-card">
+        <img src="assets/projects/stackvisualizer (1).png" alt="Stack Visualizer">
         <h3>Stack Visualizer</h3>
-        <p>Visualizes stack operations and expression evaluation.</p>
-        <div class="project-links">
-          <a href="https://stack-conversion-and-evaluation-ktm.vercel.app" target="_blank">Live</a>
-          <a href="https://github.com/nirooshhhh/Stack-Conversion-and-Evaluation" target="_blank">Code</a>
-        </div>
+        <p>Tool to visualize stack operations and expression evaluation.</p>
+        <a href="https://stack-conversion-and-evaluation-ktm.vercel.app" target="_blank">Live Demo</a>
+        <a href="https://github.com/nirooshhhh/Stack-Conversion-and-Evaluation" target="_blank">GitHub</a>
       </div>
-    </div>
 
-    <div class="project-card">
-      <img src="assets/projects/aicrop.png" alt="AI Crop">
-      <div class="project-content">
+      <div class="project-card">
+        <img src="assets/projects/aicrop.png" alt="AI Crop">
         <h3>AI Crop Recommendation</h3>
-        <p>ML system suggesting crops using soil & weather data.</p>
-        <div class="project-links">
-          <span class="coming">In Progress</span>
-        </div>
+        <p>Machine learning-based system recommending crops based on data.</p>
+        <p><strong>Currently in progress...</strong></p>
       </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <h2>Contact Me</h2>
 
-<!-- CONTACT -->
-<section id="contact" class="contact section">
-  <h2 class="section-title">Contact</h2>
-  <p>Email: niroshrai2006@gmail.com</p>
-  <p>GitHub: github.com/nirooshhhh</p>
-  <p>LinkedIn: linkedin.com/in/nirosh-rai-b</p>
-</section>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
 
-<footer>
-  <p>© 2026 Nirosh Rai | Built with HTML, CSS & JS</p>
-</footer>
+    <p id="form-status"></p>
+  </section>
 
-<script src="script.js"></script>
+  <footer>
+    <p>© 2026 Nirosh Rai | Engineering Student</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

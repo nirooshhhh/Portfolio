@@ -1,31 +1,39 @@
-// Smooth scroll
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
 
-// Typing effect
-const text = ["Frontend Developer", "React Developer", "UI Enthusiast"];
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+// Contact Form Submission
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
 
-(function type(){
-  if(count === text.length){
-    count = 0;
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value
+  };
+
+  try {
+    const res = await fetch("http://localhost:5000/send", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData)
+    });
+
+    const data = await res.json();
+    status.textContent = data.message;
+    form.reset();
+
+  } catch (err) {
+    status.textContent = "Something went wrong.";
   }
-  currentText = text[count];
-  letter = currentText.slice(0, ++index);
-
-  document.querySelector(".typing").textContent = letter;
-
-  if(letter.length === currentText.length){
-    count++;
-    index = 0;
-  }
-  setTimeout(type, 100);
-})();
+});
