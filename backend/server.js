@@ -9,8 +9,16 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 app.post("/send-email", async (req, res) => {
   const { name, email, message } = req.body;
+
+  if (!name || !email || !message) {
+    return res.status(400).json({ message: "All fields are required." });
+  }
 
   try {
     await resend.emails.send({
@@ -25,10 +33,11 @@ app.post("/send-email", async (req, res) => {
       `,
     });
 
-    res.status(200).json({ success: true });
+    res.status(200).json({ message: "Message sent successfully ✅" });
+
   } catch (error) {
     console.log(error);
-    res.status(500).json({ success: false });
+    res.status(500).json({ message: "Failed to send message ❌" });
   }
 });
 

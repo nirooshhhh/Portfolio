@@ -31,9 +31,11 @@ form.addEventListener("submit", async (e) => {
 
     const data = await res.json();
     status.textContent = data.message;
+    status.style.color = "lightgreen";
     form.reset();
 
   } catch (err) {
     status.textContent = "Something went wrong.";
+    status.style.color = "red";
   }
 });
